@@ -6,7 +6,7 @@
 	<title>Document</title>
 	<style>
 		#bio {
-			
+			width: 765px;
 			border-collapse:collapse;
 			margin: 0 auto;
 		}
@@ -18,26 +18,35 @@
 			font:2em Microsoft YaHei;
 		}
 		
+		#bio tr:nth-child(even) {
+			background: rgba(153,153,153,0.1);
+		}
+		
 		#bio td {
 			border: 2px solid #84AF9B;
 			color: #4398ED;
-			text-align: center;
 			font:1em Microsoft YaHei;
-		}
-		
-		#bio tr:nth-child(even) {
-			background: rgba(153,153,153,0.1);
 		}
 		
 		#bio .item {
 			color: #84AF9B;
 			font-weight:bold;
+			text-align: center;
+			white-space:nowrap;
+		}
+		#bio .photo-td {
+			text-align: center;
+		}
+		
+		#bio .photo {
+			width: 139px;
+			height: 200px;
 		}
 	</style>
 </head>
 
 <body>
-	<table border="1" cellpadding=40 id="bio">
+	<table border="1" cellpadding=20 id="bio">
 		<caption>个人简历</caption>
 		<tbody>
 			<tr>
@@ -46,7 +55,7 @@
 				<td>黄勇龙</td>
 				<td class="item">性别</td>
 				<td>男</td>
-				<td rowspan=4 class="photo"></td>
+				<td rowspan=4 class="photo-td"><img src="" alt="" class="photo"></td>
 			</tr>
 			<tr>
 				<td class="item">出生年月</td>
@@ -89,15 +98,15 @@
 			</tr>
 			<tr>
 				<td class="item">自我评价</td>
-				<td colspan=5></td>
+				<td colspan=5>对于互联网前端领域有着无限向往，通过自学掌握了html,css,javascript等前端语言。喜欢挑战自我，坚持学习的新知识以充实自我。对前端未知领域有着强烈的好奇心。</td>
 			</tr>
 			<tr>
 				<td class="item">技能证书</td>
-				<td colspan=5></td>
+				<td colspan=5>计算机网络管理员高级证，办公软件中级证</td>
 			</tr>
 			<tr>
 				<td class="item">求职意向</td>
-				<td colspan=5></td>
+				<td colspan=5>网页制作</td>
 			</tr>
 			<tr>
 				<td class="item">兴趣爱好</td>
